@@ -1,4 +1,69 @@
-<h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<header class="py-4 border-bottom border-3 border-primary">
+  <div class="container header d-flex justify-content-between">
+    <div class="d-flex align-items-center">
+      <!-- /////logo///// -->
+      <a href="index.html" class="me-4 me-lg-6">
+        <h1 class="d-flex align-items-center mb-0">
+          <img
+            src="/assets/images/logo.png"
+            alt="logo"
+            class="header-logo me-lg-base"
+          />
+          <div class="d-none d-lg-block fs-3 english">
+            7TAO<span class="fs-6 chinese ms-1 align-middle">活動訂票網</span>
+          </div>
+        </h1>
+      </a>
+      <!-- /////search///// -->
+      <div class="header-search">
+        <div class="input-group rounded-0 w-100">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="bg-bg py-2 py-lg-3 ps-3 ps-lg-base w-100"
+            placeholder="探索活動"
+          />
+          <button
+            type="button"
+            class="btn btn-primary rounded-0 px-3 px-lg-base py-2 py-lg-2 flex-shrink-0"
+          >
+            <i class="icofont-search-1"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- /////buger-menu///// -->
+    <nav class="d-lg-none navbar navbar-light p-0">
+      <button
+        class="navbar-toggler border-primary"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#header-menu"
+        aria-controls="header-menu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- /////menu///// -->
+      <ul
+        class="d-none d-lg-block header-menu d-flex align-items-center mb-0 collapse"
+        id="header-menu"
+      >
+        <li class="me-4">
+          <a href="#">
+            <i class="icofont-ui-file me-1"></i>
+            <span class="english">REGISTER</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icofont-ui-user me-1"></i>
+            <span class="english">LOGIN</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

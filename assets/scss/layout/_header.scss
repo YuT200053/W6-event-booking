@@ -1,4 +1,35 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header {
+  &-logo {
+    max-width: 40px;
+
+    @include lg() {
+      max-width: 53px;
+    }
+  }
+
+  &-search {
+    width: 207px;
+
+    @include lg() {
+      width: 335px;
+    }
+
+    input {
+      max-width: 166px;
+
+      @include lg() {
+        max-width: 285px;
+      }
+    }
+  }
+
+  &-menu {
+    a {
+      @include zoom(0.3s);
+    }
+
+    li:hover a {
+      color: $success;
+    }
+  }
 }

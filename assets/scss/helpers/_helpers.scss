@@ -1,7 +1,28 @@
+// /////mixin/////
+@mixin zoom($times) {
+    transition: ease-in-out $times;
+}
+
+@mixin lg() {
+    @media (min-width:992px) {
+        @content
+    }
+}
+
+// /////字體設定/////
 .english {
     font-family: $english;
 }
 
 .chinese {
     font-family: $chinese;
+}
+
+// /////按鈕設定/////
+.btn-primary {
+    @include zoom(0.3s);
+
+    &:hover {
+        color: $secondary;
+    }
 }
