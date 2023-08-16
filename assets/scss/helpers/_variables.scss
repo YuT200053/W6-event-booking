@@ -409,7 +409,9 @@ $spacers: (
   4: $spacer * 1.5,
   5: $spacer * 2,
   //customer
-  6:$spacer *3,
+  6:$spacer *2.5,
+  //customer
+  7:$spacer * 3,
   //customer
   section: $spacer * 3.75,
   //customer     
@@ -516,6 +518,7 @@ $container-max-widths: (
 $grid-columns: 12 !default;
 $grid-gutter-width: 1.5rem !default;
 $grid-row-columns: 6 !default;
+
 
 // Container padding
 

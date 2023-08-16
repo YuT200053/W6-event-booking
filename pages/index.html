@@ -6,15 +6,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>W6-7TAO活動訂票網 │ 此刻打盹，你將做夢；此刻學習，你將圓夢</title>
     <link rel="stylesheet" href="../assets/images/icofont/icofont.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px" alt="cat" />
-    <button type="button" class="btn btn-primary">123</button>
-    <i class="icofont-ui-file"></i>
+    <div class="container">
+      <!-- /////banner///// -->
+      <div class="swiper mySwiper mt-base mt-lg-5 mb-6">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="../assets/images/event/13.jpg"
+              alt="隔牆有耳-沒有草東的派對"
+            />
+            <div
+              class="position-absolute w-100 h-100 text-white pt-base pt-lg-6 px-6 px-lg-6 pb-4 d-flex flex-column"
+            >
+              <p
+                class="english fs-xl text-start lh-1 d-flex flex-column flex-lg-row"
+              >
+                19 MAY&nbsp;<span>2023</span>
+              </p>
+              <div class="banner-info">
+                <h2 class="chinese fs-m fs-lg-4 mb-0 mb-lg-base">
+                  隔牆有耳-沒有草東的派對
+                </h2>
+                <p class="fs-6 d-none d-lg-block">
+                  你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
+                  帶上啤酒、野餐墊，讓我們在Live
+                  House外面一起開場「沒有草東的派對」吧！
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../assets/images/event/13.jpg"
+              alt="隔牆有耳-沒有草東的派對"
+            />
+            <div
+              class="position-absolute w-100 h-100 text-white pt-base pt-lg-6 px-6 px-lg-6 pb-4 d-flex flex-column"
+            >
+              <p
+                class="english fs-xl text-start lh-1 d-flex flex-column flex-lg-row"
+              >
+                19 MAY&nbsp;<span>2023</span>
+              </p>
+              <div class="banner-info">
+                <h2 class="chinese fs-m fs-lg-4 mb-0 mb-lg-base">
+                  隔牆有耳-沒有草東的派對
+                </h2>
+                <p class="fs-6 d-none d-lg-block">
+                  你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
+                  帶上啤酒、野餐墊，讓我們在Live
+                  House外面一起開場「沒有草東的派對」吧！
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../assets/images/event/13.jpg"
+              alt="隔牆有耳-沒有草東的派對"
+            />
+            <div
+              class="position-absolute w-100 h-100 text-white pt-base pt-lg-6 px-6 px-lg-6 pb-4 d-flex flex-column"
+            >
+              <p
+                class="english fs-xl text-start lh-1 d-flex flex-column flex-lg-row"
+              >
+                19 MAY&nbsp;<span>2023</span>
+              </p>
+              <div class="banner-info">
+                <h2 class="chinese fs-m fs-lg-4 mb-0 mb-lg-base">
+                  隔牆有耳-沒有草東的派對
+                </h2>
+                <p class="fs-6 d-none d-lg-block">
+                  你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
+                  帶上啤酒、野餐墊，讓我們在Live
+                  House外面一起開場「沒有草東的派對」吧！
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <!-- /////service///// -->
+
+      <div class="row row-cols-3 row-cols-lg-6 g-2 g-lg-3">
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+      </div>
+    </div>
 
     <%- include('./layout/footer'); -%>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

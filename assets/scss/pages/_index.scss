@@ -1,3 +1,59 @@
-.index-title {
-  font-size: 100px;
+.swiper {
+  width: 100%;
+  height: 100%;
+
+  &-wrapper {
+    height: 350px;
+
+    @include lg() {
+      height: 518px;
+    }
+  }
+
+  &-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+
+    @include lg() {
+      height: 518px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+
+  &-button-next,
+  &-button-prev {
+    margin-right: 40px;
+    margin-left: 40px;
+
+    &::after {
+      font-size: 32px;
+      color: $white;
+    }
+  }
+}
+
+.banner-info {
+  max-width: 832px;
+  margin: auto auto 0;
+}
+
+.service {
+  img {
+    width: 80px;
+  }
+
+  li {
+    padding: 35px 0 35px;
+  }
 }
