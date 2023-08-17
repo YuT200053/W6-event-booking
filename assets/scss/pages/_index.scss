@@ -49,11 +49,34 @@
 }
 
 .service {
-  img {
-    width: 80px;
+  padding: 20px 0;
+  margin: 0 auto;
+  @include zoom(0.3s);
+
+  @include lg() {
+    padding: 35px 0;
   }
 
-  li {
-    padding: 35px 0 35px;
+  &:hover {
+    background-color: $secondary;
+  }
+
+  img {
+    width: 40px;
+
+    @include lg() {
+      width: 80px;
+    }
+  }
+}
+
+.more {
+  height: 100%;
+  color: $white;
+  @include zoom(0.3s);
+
+
+  &:hover {
+    color: $secondary;
   }
 }
