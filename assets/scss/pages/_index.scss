@@ -73,10 +73,15 @@
 .more {
   height: 100%;
   color: $white;
+  font-size: 24px;
   @include zoom(0.3s);
 
+  @include lg() {
+    font-size: 48px;
+  }
 
   &:hover {
     color: $secondary;
   }
+
 }
