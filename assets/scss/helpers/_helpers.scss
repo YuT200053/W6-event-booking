@@ -20,9 +20,42 @@
 
 // /////按鈕設定/////
 .btn-primary {
+    border-radius: 0px;
     @include zoom(0.3s);
 
     &:hover {
         color: $secondary;
+    }
+}
+
+.tags {
+    position: relative;
+    padding: 4px 16px;
+    border: 1px solid $primary;
+    margin-right: 8px;
+    font-size: 14px;
+
+    @include lg() {
+        font-size: 16px;
+        padding: 4px 24px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        background-color: $primary;
+        left: 0;
+        top: 0;
+    }
+
+    &:hover {
+        background-color: $primary;
+        color: $white;
+    }
+
+    &:hover::before {
+        background-color: $secondary;
     }
 }

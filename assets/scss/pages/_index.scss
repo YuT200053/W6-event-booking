@@ -85,6 +85,7 @@
   }
 }
 
+// /////recent/////
 .recent-event {
   .card-img-top {
     height: 210px;
@@ -102,10 +103,6 @@
       height: 100%;
       @include zoom(0.5s);
     }
-
-    img:nth-child(4) {
-      object-position: bottom;
-    }
   }
 
   .card:hover .card-img-top img {
@@ -122,11 +119,11 @@
       @include zoom(0.3s);
     }
 
-    .tags:hover span {
+    .recent-tags:hover span {
       text-decoration: underline;
     }
 
-    .tags img {
+    .recent-tags img {
       height: auto;
       width: 20px;
 
@@ -156,6 +153,28 @@
       z-index: 0;
       display: none;
       @include zoom(0.3s);
+    }
+  }
+}
+
+// /////online/////
+.online-img {
+  width: 100%;
+  max-height: 158px;
+  overflow: hidden;
+
+  @include lg() {
+    max-height: 317px;
+  }
+
+  img {
+    width: 100%;
+    max-height: 158px;
+    object-fit: cover;
+    object-position: center 30%;
+
+    @include lg() {
+      max-height: 317px;
     }
   }
 }
