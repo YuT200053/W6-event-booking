@@ -539,7 +539,7 @@ $border-widths: (
   5: 5px) !default;
 $border-style: solid !default;
 $border-color: $gray-300 !default;
-$border-color-translucent: rgba($black, .175) !default;
+$border-color-translucent: $primary !default; //customer
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
@@ -1370,23 +1370,23 @@ $placeholder-opacity-min: .2 !default;
 // Cards
 
 // scss-docs-start card-variables
-$card-spacer-y: $spacer !default;
-$card-spacer-x: $spacer !default;
+$card-spacer-y: 0 !default; //customer
+$card-spacer-x: 0 !default; //customer
 $card-title-spacer-y: $spacer * .5 !default;
 $card-title-color: null !default;
 $card-subtitle-color: null !default;
-$card-border-width: var(--#{$prefix}border-width) !default;
+$card-border-width: $border-width * 3 !default; //customer
 $card-border-color: var(--#{$prefix}border-color-translucent) !default;
-$card-border-radius: var(--#{$prefix}border-radius) !default;
+$card-border-radius: 0 !default; //customer
 $card-box-shadow: null !default;
 $card-inner-border-radius: subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y: $card-spacer-y * .5 !default;
 $card-cap-padding-x: $card-spacer-x !default;
-$card-cap-bg: rgba(var(--#{$prefix}body-color-rgb), .03) !default;
+$card-cap-bg: rgba(var(--#{$prefix}body-bg)) !default; //customer
 $card-cap-color: null !default;
 $card-height: null !default;
 $card-color: null !default;
-$card-bg: var(--#{$prefix}body-bg) !default;
+$card-bg: $bg !default; //customer
 $card-img-overlay-padding: $spacer !default;
 $card-group-margin: $grid-gutter-width * .5 !default;
 // scss-docs-end card-variables

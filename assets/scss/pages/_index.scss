@@ -83,5 +83,79 @@
   &:hover {
     color: $secondary;
   }
+}
 
+.recent-event {
+  .card-img-top {
+    height: 210px;
+    max-height: 210px;
+    overflow: hidden;
+
+    @include lg() {
+      height: 255px;
+      max-height: 255px;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      @include zoom(0.5s);
+    }
+
+    img:nth-child(4) {
+      object-position: bottom;
+    }
+  }
+
+  .card:hover .card-img-top img {
+    transform: scale(1.2);
+  }
+
+  .card-text {
+    text-align: justify;
+  }
+
+  .card-footer {
+
+    span {
+      @include zoom(0.3s);
+    }
+
+    .tags:hover span {
+      text-decoration: underline;
+    }
+
+    .tags img {
+      height: auto;
+      width: 20px;
+
+      @include lg() {
+        max-width: 24px;
+      }
+    }
+
+    .action {
+      width: 68px;
+      height: 16;
+
+      &:hover .circle {
+        display: block;
+      }
+
+      span {
+        position: inherit;
+        z-index: 1;
+      }
+    }
+
+    .circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+      z-index: 0;
+      display: none;
+      @include zoom(0.3s);
+    }
+  }
 }
