@@ -35,7 +35,10 @@
     border: 1px solid $primary;
     border-left: 0;
     margin-right: 8px;
+    margin-bottom: 8px;
     font-size: 14px;
+    display: inline-block;
+    @include zoom(0.2s);
 
     @include lg() {
         font-size: 16px;
@@ -46,10 +49,11 @@
         content: "";
         position: absolute;
         width: 5px;
-        height: 103%;
+        height: 105%;
         background-color: $primary;
         left: 0;
-        top: -1%;
+        top: -2%;
+        @include zoom(0.2s);
     }
 
     &:hover {
