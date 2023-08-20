@@ -10,8 +10,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <script type="module" crossorigin src="/W6-event-booking/assets/index-2daecde4.js"></script>
-    <link rel="stylesheet" href="/W6-event-booking/assets/index-24ce4fe8.css">
+    <script type="module" crossorigin src="/W6-event-booking/assets/index-cf3395ec.js"></script>
+    <link rel="stylesheet" href="/W6-event-booking/assets/index-57b248ab.css">
   </head>
   <body>
     <header class="py-4 border-bottom border-3 border-primary">
@@ -250,7 +250,7 @@
           </div>
         </div>
         <!-- /////recent///// -->
-        <section class="mb-5 mb-lg-section">
+        <section class="recent mb-5 mb-lg-section">
           <h2
             class="title w-100 d-flex justify-content-between align-items-center border border-3 border-primary py-base py-lg-4 px-3 px-lg-5 mb-4 mb-lg-5"
           >
@@ -292,7 +292,11 @@
                       class="me-1"
                     /><span class="chinese">社群活動</span>
                   </a>
-                  <a href="#" class="action position-relative">
+                  <a
+                    href="#membership"
+                    data-bs-toggle="modal"
+                    class="action position-relative"
+                  >
                     <span class="fw-bold"
                       >開賣中<i class="icofont-rounded-double-right ms-1"></i
                     ></span>
@@ -520,6 +524,48 @@
                     <div
                       class="circle bg-secondary position-absolute translate-middle top-50"
                     ></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /////modal///// -->
+          <div
+            class="modal fade"
+            id="membership"
+            tabindex="-1"
+            aria-labelledby="membership"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog mx-auto">
+              <div class="modal-content rounded-0 border-0">
+                <div
+                  class="modal-header border-bottom border-3 border-primary pe-4"
+                >
+                  <h4
+                    class="modal-title chinese fs-4 mx-auto"
+                    id="exampleModalLabel"
+                  >
+                    立刻成為7TAO會員
+                  </h4>
+                  <button
+                    type="button"
+                    class="btn-close ms-0"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body py-7 text-center">
+                  <p class="mb-4">
+                    立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。<br />
+                    您也可以先報名活動，日後再註冊帳號，<br />
+                    系統會在認證您的Email後，協助您找回舊的訂單。
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary py-2 px-6 fw-bold modal-btn fs-5"
+                  >
+                    立即成為會員
                   </a>
                 </div>
               </div>
