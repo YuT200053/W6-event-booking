@@ -22,14 +22,15 @@
       }
     }
   }
+}
 
-  &-menu {
-    a {
-      @include zoom(0.3s);
-    }
+header,
+#header-menu {
+  a {
+    @include zoom(0.3s);
+  }
 
-    li:hover a {
-      color: $success;
-    }
+  li:hover a {
+    color: $success;
   }
 }
