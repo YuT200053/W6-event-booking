@@ -262,3 +262,34 @@
     }
   }
 }
+
+// /////action/////
+.action {
+  li {
+    a {
+      @include zoom(0.2s);
+
+      &:hover i {
+        color: $secondary;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    i {
+      color: $white;
+      background-color: $primary;
+      @include zoom(0.2s);
+    }
+  }
+
+  &-sub {
+    border: 2px solid $primary;
+
+    @include lg() {
+      border-left: 0px;
+    }
+  }
+}
