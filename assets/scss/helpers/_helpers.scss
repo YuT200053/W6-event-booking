@@ -65,3 +65,18 @@
         background-color: $secondary;
     }
 }
+
+// /////modal/////
+.modal {
+    &-dialog {
+        max-width: 375px;
+
+        @include lg() {
+            max-width: 636px;
+        }
+    }
+
+    &-content {
+        width: 100%;
+    }
+}
