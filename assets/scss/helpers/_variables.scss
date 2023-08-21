@@ -1327,20 +1327,20 @@ $pagination-padding-x-lg: 1.5rem !default;
 $pagination-font-size: $font-size-base !default;
 
 $pagination-color: var(--#{$prefix}link-color) !default;
-$pagination-bg: var(--#{$prefix}body-bg) !default;
-$pagination-border-radius: var(--#{$prefix}border-radius) !default;
+$pagination-bg: $bg !default; //customer
+$pagination-border-radius: 0px !default; //customer
 $pagination-border-width: var(--#{$prefix}border-width) !default;
 $pagination-margin-start: calc(#{$pagination-border-width} * -1) !default; // stylelint-disable-line function-disallowed-list
-$pagination-border-color: var(--#{$prefix}border-color) !default;
+$pagination-border-color: $primary !default; //customer
 
-$pagination-focus-color: var(--#{$prefix}link-hover-color) !default;
-$pagination-focus-bg: var(--#{$prefix}secondary-bg) !default;
+$pagination-focus-color: $secondary !default; //customer
+$pagination-focus-bg: $primary !default; //customer
 $pagination-focus-box-shadow: $focus-ring-box-shadow !default;
 $pagination-focus-outline: 0 !default;
 
-$pagination-hover-color: var(--#{$prefix}link-hover-color) !default;
-$pagination-hover-bg: var(--#{$prefix}tertiary-bg) !default;
-$pagination-hover-border-color: var(--#{$prefix}border-color) !default; // Todo in v6: remove this?
+$pagination-hover-color: $secondary !default; //customer
+$pagination-hover-bg: $primary !default; //customer
+$pagination-hover-border-color: $primary !default; // Todo in v6: remove this?
 
 $pagination-active-color: $component-active-color !default;
 $pagination-active-bg: $component-active-bg !default;
