@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>W6-7TAO活動訂票網 │ 此刻打盹，你將做夢；此刻學習，你將圓夢</title>
     
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <script type="module" crossorigin src="/W6-event-booking/assets/index-cf3395ec.js"></script>
-    <link rel="stylesheet" href="/W6-event-booking/assets/index-57b248ab.css">
+    <script type="module" crossorigin src="/W6-event-booking/assets/main-a77328b6.js"></script>
+    <link rel="stylesheet" href="/W6-event-booking/assets/main-29edbc6e.css">
   </head>
   <body>
+    <!-- /////header///// -->
     <header class="py-4 border-bottom border-3 border-primary">
   <div class="container header d-flex justify-content-between">
     <div class="d-flex align-items-center">
@@ -240,7 +237,7 @@
           </div>
           <div class="col">
             <a
-              href="#"
+              href="event.html"
               class="d-flex align-items-center more border border-2 border-primary bg-primary"
             >
               <span class="chinese lh-sm mx-auto d-block fs-4 fs-lg-2"
@@ -252,7 +249,7 @@
         <!-- /////recent///// -->
         <section class="recent mb-5 mb-lg-section">
           <h2
-            class="title w-100 d-flex justify-content-between align-items-center border border-3 border-primary py-base py-lg-4 px-3 px-lg-5 mb-4 mb-lg-5"
+            class="w-100 d-flex justify-content-between align-items-center border border-3 border-primary py-base py-lg-4 px-3 px-lg-5 mb-4 mb-lg-5"
           >
             <span class="english fs-4 fs-lg-1">RECENT</span>
             <span class="chinese fs-6 fs-lg-3">近期活動</span>
@@ -340,7 +337,11 @@
                       class="me-1"
                     /><span class="chinese">演出</span>
                   </a>
-                  <a href="#" class="action position-relative">
+                  <a
+                    href="#membership"
+                    data-bs-toggle="modal"
+                    class="action position-relative"
+                  >
                     <span class="fw-bold"
                       >開賣中<i class="icofont-rounded-double-right ms-1"></i
                     ></span>
@@ -384,7 +385,11 @@
                       class="me-1"
                     /><span class="chinese">聯誼</span>
                   </a>
-                  <a href="#" class="action position-relative">
+                  <a
+                    href="#membership"
+                    data-bs-toggle="modal"
+                    class="action position-relative"
+                  >
                     <span class="fw-bold"
                       >開賣中<i class="icofont-rounded-double-right ms-1"></i
                     ></span>
@@ -428,7 +433,11 @@
                       class="me-1"
                     /><span class="chinese">遊戲競賽</span>
                   </a>
-                  <a href="#" class="action position-relative">
+                  <a
+                    href="#membership"
+                    data-bs-toggle="modal"
+                    class="action position-relative"
+                  >
                     <span class="fw-bold"
                       >開賣中<i class="icofont-rounded-double-right ms-1"></i
                     ></span>
@@ -473,7 +482,11 @@
                       class="me-1"
                     /><span class="chinese">社群活動</span>
                   </a>
-                  <a href="#" class="action position-relative">
+                  <a
+                    href="#membership"
+                    data-bs-toggle="modal"
+                    class="action position-relative"
+                  >
                     <span class="fw-bold"
                       >開賣中<i class="icofont-rounded-double-right ms-1"></i
                     ></span>
@@ -517,7 +530,11 @@
                       class="me-1"
                     /><span class="chinese">展覽</span>
                   </a>
-                  <a href="#" class="action position-relative">
+                  <a
+                    href="#membership"
+                    data-bs-toggle="modal"
+                    class="action position-relative"
+                  >
                     <span class="fw-bold"
                       >開賣中<i class="icofont-rounded-double-right ms-1"></i
                     ></span>
@@ -537,7 +554,7 @@
             aria-labelledby="membership"
             aria-hidden="true"
           >
-            <div class="modal-dialog mx-auto">
+            <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content rounded-0 border-0">
                 <div
                   class="modal-header border-bottom border-3 border-primary pe-4"
@@ -598,9 +615,9 @@
                     切特居批踢
                   </h3>
                   <div>
-                    <a href="#" class="tags">競賽</a
-                    ><a href="#" class="tags">科技</a
-                    ><a href="#" class="tags">有趣</a>
+                    <a href="#" class="tags">競賽</a>
+                    <a href="#" class="tags">科技</a>
+                    <a href="#" class="tags">有趣</a>
                   </div>
                   <p class="card-text my-3 my-lg-5 flex-fill">
                     最近網路上很流行的AI程式
@@ -797,6 +814,7 @@
         <p class="fs-s fs-lg-m mb-0">——我也不知道誰說的</p>
       </section>
     </main>
+    <!-- /////footer///// -->
     <footer class="py-5 border-top border-3 border-primary">
   <p class="m-0 text-center">© 7TAO七逃. All Rights Reserved</p>
 </footer>
@@ -811,6 +829,7 @@
 ></script>
 <!-- /////swiper///// -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- /////swiper///// -->
     <script>
       var swiper = new Swiper(".bannerSwiper", {
         navigation: {
